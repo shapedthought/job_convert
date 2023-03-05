@@ -16,7 +16,7 @@ struct Cli {
 fn main() -> Result<()> {
     let cli = Cli::parse();
 
-    convert_file(cli.read_path, cli.write_path);
+    convert_file(cli.read_path, cli.write_path)?;
 
     Ok(())
 }
